@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -97,8 +96,11 @@ button:hover {
 /* Ensure responsiveness */
 @media (max-width: 768px) {
     #Home {
-        background-size: contain; /* Adjusts for small screens */
+        background-size: contain; /* Ensures the background image fits */
         background-position: top;
+        height: auto !important; /* Allows dynamic height */
+        min-height: 250px; /* Ensures it doesn’t shrink too much */
+        padding-bottom: 20px; /* Reduces extra spacing */
     }
 }
 
