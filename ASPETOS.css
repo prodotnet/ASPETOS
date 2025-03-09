@@ -1,25 +1,8 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-	list-style: none;
-           
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-	font-size:20px;
-}
-
-a {
-    text-decoration: none;
-	color:white;
 }
 
 nav {
@@ -29,71 +12,67 @@ nav {
     padding: 1em 0;
 }
 
-section.centered {
-    text-align: center;
-    padding: 20px;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+nav ul li {
+    margin: 10px;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive Layout */
 .row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
 }
 
 .column {
-    flex: 1;
+    flex: 1 1 300px; /* Adjust width based on screen size */
+    max-width: 400px;
     padding: 20px;
     margin: 10px;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-section.centered-description {
     text-align: center;
-    padding: 20px;
 }
 
-section.centered-description p {
-    margin: 40px 20px;
-	
-}
-
-}
-
-section.centered-login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
+/* Responsive Forms */
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 400px;
+    width: 90%;
 }
 
 .form-group {
+    width: 100%;
     margin-bottom: 15px;
 }
 
-label {
-    margin-bottom: 5px;
-}
-
-input {
-    padding: 8px;
-    width: 200px;
+input, button {
+    width: 100%;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
 button {
-    padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
-    border: none;
-    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -101,93 +80,38 @@ button:hover {
     background-color: #45a049;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color:white ;
-    color: #4CAF50;
-    text-align: left;
-    padding: 1em 0;
-}
-
-section.centered-login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-section.centered-signup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 600px;
+#Home {
+    
+	background-image: url('img/home_page_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px; /* Full height of the viewport */
     width: 100%;
-}
-
-.form-row {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    width: 48%;
-}
-
-label {
-    margin-bottom: 5px;
-}
-
-input {
-    padding: 8px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-.login-link {
-    color: blue;
-    margin-top: 20px;
-}
-
-.login-link a {
-    color: purple;
-    margin-top: 20px;
-}
-
-.home img{
-	margin-top:1px;
-	width:1400px;
-	height:600px; 
-    object-fit: cover;
+    align-items: center;
+    justify-content: center;
 	
-	
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    #Home {
+        background-size: contain; /* Adjusts for small screens */
+        background-position: top;
+    }
+}
+
+.banner {
+    width: 100%;
+    max-height: 800px; /* Limits the height */
+    object-fit: cover; /* Ensures the image scales well */
+    margin-top: 18px; /* Adds the margin you requested */
+}
+.navbar-toggler {
+    border-color: white !important; /* Makes the border white */
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%) brightness(100%); /* Converts the icon to white */
 }
