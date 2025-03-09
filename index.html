@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASPETOS</title>
+    <link rel="stylesheet" href="ASPETOS.css">
+	 
+	 <link rel="icon" href="img/ASPETOS.jpg"  />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style=" background-color: #222;">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExample01">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse centered-description" id="navbarExample01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item "><a class="nav-link text-success" href="#Home">Home</a></li>
+                        <li class="nav-item "><a  class="nav-link text-success" href="#OurPromise">Our Promise</a></li>
+                        <li class="nav-item "><a class="nav-link text-success" href="#About">About</a></li>
+                        <li class="nav-item  "><a class="nav-link text-success" href="#Contact">Contact</a></li>
+                        <li class="nav-item "><a class="nav-link text-success" href="#Signin">My Account</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Background Image -->
+    <div id="Home" class="p-5 text-center bg-image" style="background-image: url('img/home_page_image.jpg'); height: 800px; background-size: cover;"></div>
+    
+    <!-- Horizontal Line and Subtopic -->
+    <div id="OurPromise" class="container text-center my-5 text-success">
+        <hr class="my-4">
+        <h2 class="fw-bold text-success">Our Commitment to Financial Stability</h2>
+        <hr class="my-4">
+    </div>
+    
+    <!-- Features Section -->
+    <section  class="container text-center">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card p-4 "style=" background-color: #333;">
+                    <img src="img/Financial_Stability.jpg" class="card-img-top" alt="Financial Stability">
+                    <h5 class="card-title text-success">Financial Stability</h5>
+                    <p class="card-text text-light">Promote both fiscal and monetary balance and provide insights to institutions to promote balance..</p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card p-4" style=" background-color: #333;">
+                    <img src="img/Income_Gap.jpg" class="card-img-top" alt="Income Gap">
+                    <h5 class="card-title text-success">Income Gap</h5>
+                    <p class="card-text text-light">Bridge income gaps in society and promote income efficiency and GDP per capita measurements.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card p-4" style=" background-color: #333;">
+                    <img src="img/Inflation.jpg" class="card-img-top" alt="Inflation">
+                    <h5 class="card-title text-success">Inflation</h5>
+                    <p class="card-text text-light">Pricing models efficiency that can benefit all of the participants in the economy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container text-center my-5">
+ <!-- Horizontal Line and Subtopic -->
+    <div id="About" class="container text-center my-5">
+        <hr class="my-4">
+        <h2 class="fw-bold text-success">About</h2>
+        <hr class="my-4">
+    </div>
+
+    <!-- About Section -->
+    <section  class="container text-center my-5">
+        <img src="img/financial_theme_banner.jpg" style=" height: 800px; background-size: cover;" alt="Financial Banner" class="banner">
+        <p class="text-light">We offer data solutions and security for both individuals and businesses with the aim of bridging income gaps.</p>
+        <p class="text-light">Promoting financial stability, calming and controlling inflation, and offering precise data that can be utilized</p>
+        <p class="text-light">by our machine learning tools to automate financial advisory systems and assist financial advisors in</p>
+        <p class="text-light">creating construction portfolio management systems. We also optimize your cloud data protection and give you</p>
+        <p class="text-light">the power to own it and sell it if you wish, and run customized surveys.</p>
+    </section>
+</div>
+   
+
+    <!-- Sign In / Register Section (Tabs) -->
+	 <!-- Horizontal Line and Subtopic -->
+    <div id="Signin" class="container text-center my-5">
+        <hr class="my-4">
+        <h2 class="fw-bold text-success">My Account</h2>
+        <hr class="my-4">
+    </div>
+    <section  class="container my-5">
+        
+
+        <!-- Pills Nav -->
+        <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active  text-success" id="tab-login" data-bs-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true">Sign In</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link text-success" id="tab-register" data-bs-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="false">Sign Up</a>
+            </li>
+        </ul>
+
+        <!-- Pills content -->
+        <div class="tab-content" id="pills-tabContent">
+            <!-- Login Form -->
+            <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+                <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-15">
+            <div class="border rounded-2 p-4">
+                <h2 class="text-center mb-4 text-success">Sign In</h2>
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <img src="img/login.jpg" alt="Login" style="max-width: 100%; height: 600;">
+                    </div>
+                    <div class="col-md-6">
+                        <form  autocomplete="off" style="width: 100%;">
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label text-light" for="email">Email address:</label>
+                                <input formControlName="email" type="email" id="email" class="form-control"
+                                     />
+                               
+
+
+                            </div>
+
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label text-light" for="password">Password:</label>
+                                <input formControlName="password" id="password" type="password" class="form-control">
+                                  
+                                
+
+                            </div>
+
+                            <!-- Checkbox and Forgot password link -->
+                            <div class="row mb-4">
+                                <div class="col d-flex justify-content-start align-items-center">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="form2Example31"
+                                            unchecked />
+                                        <label class="form-check-label text-light" for="form2Example31"> Remember me </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <a href="#!" class="float-end text-light">Forgot password?</a>
+                                </div>
+                            </div>
+
+                   
+                            <!-- Sign in button -->
+                            <div class="mb-4">
+                                <button type="submit" class="btn btn-success btn-block">Submit</button>
+
+                            </div>
+
+                           
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   </div>
+			 <!-- Register Form -->
+            <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+			<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-15">
+            <div class="border rounded-2 p-4">
+                <h2 class="text-center mb-4 text-success">Sign Up</h2>
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <img src="img/register.jpg" alt="Login" style="max-width: 100%; height: 600;">
+                    </div>
+                    <div class="col-md-6">
+                        <form  autocomplete="off" style="width: 100%;">
+                
+                    
+
+                    <div class="form-outline mb-4">
+                        <input type="text" id="registerName" class="form-control" />
+                        <label class="form-label text-light" for="registerName">Name</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <input type="text" id="registerUsername" class="form-control" />
+                        <label class="form-label text-light" for="registerUsername">Username</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <input type="email" id="registerEmail" class="form-control" />
+                        <label class="form-label text-light" for="registerEmail">Email</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <input type="password" id="registerPassword" class="form-control" />
+                        <label class="form-label text-light" for="registerPassword">Password</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <input type="password" id="registerRepeatPassword" class="form-control" />
+                        <label class="form-label text-light" for="registerRepeatPassword">Repeat password</label>
+                    </div>
+
+                    <div class="form-check d-flex justify-content-center mb-4">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked />
+                        <label class="form-check-label text-light" for="registerCheck">
+                            I have read and agree to the terms
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-success btn-block mb-3">Sign up</button>
+                </form>
+            </div>
+			    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+			  
+        </div>
+    </section>
+ <!-- Contact Section -->
+  <div id="Contact" class="container text-center my-5">
+        <hr class="my-4">
+        <h2 class="fw-bold text-success">Contact Us</h2>
+        <hr class="my-4">
+    </div>
+    <section  class="container my-5">
+      
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="text-light">Get in Touch</h2>
+        <p class="text-light">If you have any questions, feedback, or inquiries, feel free to reach out to us using the form below or the provided contact details.</p>
+        <ul class="list-unstyled">
+          <li class=" text-light"><i class="bi bi-geo-alt-fill text-primary"></i > <strong>Address:</strong> 27 Mncube Drive Dube village</li>
+          <li class=" text-light"><i class="bi bi-telephone-fill text-primary"></i class=" text-light"> <strong>Phone:081-479-2327</strong> 
+          </li>
+          <li class=" text-light"><i class="bi bi-envelope-fill text-primary"></i> <strong>Email:</strong> mnelisimabizela@gmail.com</li>
+          <li class=" text-light"><i class="bi bi-clock-fill text-primary"></i> <strong>Business Hours:</strong> Mon-Fri: 9am - 4pm</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <form action="#" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label text-light">Full Name</label>
+            <input type="text" class="form-control" id="name" name="name" style="width:300px;" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label text-light">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email" style="width:300px;" required>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label text-light">Subject</label>
+            <input type="text" class="form-control" id="subject" style="width:300px;" name="subject">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label text-light">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" style="width:300px;" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+   
+    <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-md-4 mb-3">
+          <h5 class="text-success">ASPETOS</h5>
+          <p>Welcome to Financial Stability .</p>
+        </div>
+  
+        <!-- Quick Links Section -->
+        <div class="col-md-2 mb-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+       <li class="nav-item "><a class="nav-link text-success" href="#Home">Home</a></li>
+                        <li class="nav-item "><a  class="nav-link text-success" href="#OurPromise">Our Promise</a></li>
+                        <li class="nav-item "><a class="nav-link text-success" href="#About">About</a></li>
+                        <li class="nav-item  "><a class="nav-link text-success" href="#Contact">Contact</a></li>
+                        <li class="nav-item "><a class="nav-link text-success" href="#Signin">My Account</a></li>
+          </ul>
+        </div>
+  
+        <!-- Social Media Section -->
+        <div class="col-md-2 mb-3">
+          <h5>Follow Us</h5>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#" class="text-white text-decoration-none">
+                <i class="fab fa-facebook fa-lg"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-white text-decoration-none">
+                <i class="fab fa-twitter fa-lg"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-white text-decoration-none">
+                <i class="fab fa-instagram fa-lg"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-white text-decoration-none">
+                <i class="fab fa-linkedin fa-lg"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Newsletter Subscription -->
+        <div class="col-md-4 mb-3">
+          <h5>Subscribe to our Newsletter</h5>
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Enter your email" />
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Subscribe</button>
+          </form>
+        </div>
+      </div>
+  
+      <hr class="bg-light">
+  
+      <!-- Footer Bottom -->
+      <div class="text-center">
+        <p class="mb-0">© 2025 ASPETOS. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
